@@ -48,7 +48,7 @@ export default function GuessTheColor() {
                     )
                 })}
             </div>
-            {guess && <h1 style={{ color: `${guess === 'Correct!' ? 'green' : 'red'}` }}>{guess}</h1>}
+            <h1 style={{ color: `${guess === 'Correct!' ? 'green' : 'red'}`, height: '50px' }}>{guess}</h1>
         </div>
     )
 }
