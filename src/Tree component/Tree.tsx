@@ -45,7 +45,7 @@ function Entry({ entry, depth, addFile }: { entry: EntryProps; depth: number; ad
             {showAdd &&
                 <form className={styles.form1} onSubmit={handleSubmit}>
                     <div style={{ marginLeft: '20px' }}>
-                        <label>Name: </label>
+                        <label>Label: </label>
                         <input type='text' ref={nameRef} />
                         <button type='submit'>add</button>
                     </div>
