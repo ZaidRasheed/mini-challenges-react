@@ -5,27 +5,36 @@
     color: white;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .title {
     color: white;
     font-size: 3rem;
+    border-bottom: 4px solid white;
 }
 
 .home a {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-decoration: none;
     color: white;
+    transition: 0.15s ease-in;
 }
 
 .home a:hover {
-    text-decoration: underline;
+    color: grey;
 }
 
 .home ul {
     list-style: none;
-    list-style: 2rem;
 }
 
 .home li {
     position: relative;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+    width: 300px;
 }
