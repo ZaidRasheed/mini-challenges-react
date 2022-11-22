@@ -153,21 +153,16 @@ export default function Tree() {
             }
         }
         if (parentNode.path.length === 1) {
-            console.log('first')
             if (pointer.children) {
                 tail.children?.push(pointer.children[pointer.children?.length - 1])
             }
         }
         else {
-            console.log('second')
             if (tail.children) {
                 tail.children[parentNode.path[count - 1]] = pointer
             }
         }
         setFiles([...temp])
-
-        // console.log('Tail:', tail, '\n', 'Pointer:', pointer, '\n', 'Temp:', temp, '\n')
-
     }
 
     return (
