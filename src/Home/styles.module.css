@@ -1,6 +1,5 @@
 .home {
     height: 100vh;
-    padding: 20px;
     background-color: rgb(46, 47, 47);
     color: white;
 }
@@ -14,6 +13,8 @@
     color: white;
     font-size: 3rem;
     border-bottom: 4px solid white;
+    margin: 0;
+    padding: 20px 0;
 }
 
 .home a {
