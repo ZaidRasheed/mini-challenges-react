@@ -135,28 +135,34 @@ export default function Tree() {
         let count = 1
         while (count < parentNode.path.length) {
             tail = pointer
-            pointer = pointer?.children[parentNode.path[count]]
-            count++
+            if (pointer.children) {
+                pointer = pointer?.children[parentNode.path[count]]
+                count++
+            }
         }
         if (pointer.children) {
             pointer = {
                 ...pointer,
-                children: [...pointer?.children, { name: name, path: [...pointer.path, (pointer.children ? pointer.children.length : 0)] }]
+                children: [...pointer?.children, { name: name, path: [...pointer.path, (pointer.children.length)] }]
             }
         }
         else {
             pointer = {
                 ...pointer,
-                children: [{ name: name, path: [...pointer.path, (pointer.children ? pointer.children.length : 0)] }]
+                children: [{ name: name, path: [...pointer.path, (0)] }]
             }
         }
         if (parentNode.path.length === 1) {
             console.log('first')
-            tail.children?.push(pointer.children[pointer.children?.length - 1])
+            if (pointer.children) {
+                tail.children?.push(pointer.children[pointer.children?.length - 1])
+            }
         }
         else {
             console.log('second')
-            tail.children[parentNode.path[count - 1]] = pointer
+            if (tail.children) {
+                tail.children[parentNode.path[count - 1]] = pointer
+            }
         }
         setFiles([...temp])
 
@@ -183,7 +189,7 @@ export default function Tree() {
                 <div style={{ marginLeft: '20px' }}>
                     <label>Label: </label>
                     <input type='text' ref={nameRef} />
-                    <button type='submit' style={{fontSize:'1.3rem'}}> Add</button>
+                    <button type='submit' style={{ fontSize: '1.3rem' }}> Add</button>
                 </div>
             </form>
         </div>
