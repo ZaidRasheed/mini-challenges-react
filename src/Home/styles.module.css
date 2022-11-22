@@ -1,0 +1,31 @@
+.home {
+    height: 100vh;
+    padding: 20px;
+    background-color: rgb(46, 47, 47);
+    color: white;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+}
+
+.home a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+
+.home ul {
+    list-style: none;
+    list-style: 2rem;
+}
+
+.home li {
+    position: relative;
+    margin-top: 15px;
+}

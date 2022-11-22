@@ -1,0 +1,95 @@
+.app {
+    background-color: rgb(46, 47, 46);
+    height: 1100vh;
+}
+
+.name {
+    margin: 0 0 0 5px;
+    color: white;
+}
+
+.open {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.open:hover {
+    color: rgb(191, 207, 119);
+}
+
+.open:disabled,
+.open:disabled:hover {
+    cursor: default;
+    color: rgb(130, 130, 130);
+}
+
+.add {
+    background-color: transparent;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 50px;
+    margin: 10px 10px 10px 15px;
+    transition: ease-in 0.3s;
+}
+
+.add:hover {
+    background-color: white;
+    color: rgb(46, 47, 46);
+}
+
+.form>div {
+    height: 50px;
+    display: flex;
+    align-items: center
+}
+
+.from input {
+    font-size: 1.3rem;
+}
+
+.from label {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.from button {
+    background-color: transparent;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+    transition: ease-in 0.3s;
+}
+
+.from button:hover {
+    background-color: white;
+    color: rgb(46, 47, 46);
+}
+
+.back {
+    margin: 20px 20px;
+    background-color: transparent;
+    padding: 3px 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+
+.back:hover {
+    background-color: white;
+    color: rgb(46, 47, 46);
+}
