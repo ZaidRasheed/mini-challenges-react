@@ -9,6 +9,8 @@ export default function Home() {
                     <li><Link to='/Circle-The-Click'>→ Circle the Click 🔴</Link></li>
                     <li><Link to='/Component-Tree'>→ Component Tree 🌴</Link></li>
                     <li><Link to='/Guess-The-Color'>→ Guess The Color 🎨</Link></li>
+                    <li><Link to='/Match-The-Cards'>→ Match The Cards 🃏</Link></li>
+                    <li><Link to='/DropDown-Select'>→ DropDown Select 🔽</Link></li>
                 </ul>
             </div>
         </div>

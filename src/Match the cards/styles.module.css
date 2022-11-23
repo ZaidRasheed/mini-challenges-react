@@ -1,0 +1,66 @@
+.app {
+    background-color: rgb(46, 47, 46);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 50px 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    transition: 0.3s ease-in;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease-in;
+    padding: 3px 8px;
+}
+
+.button:hover {
+    background-color: white;
+    color: rgb(46, 47, 46);
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1rem;
+}
