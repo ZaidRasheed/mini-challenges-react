@@ -16,7 +16,7 @@
     width: 330px;
 }
 
-.container{
+.container {
     width: 330px;
     margin-top: 20px;
     display: flex;
@@ -34,7 +34,7 @@
     font-size: 1.1rem;
 }
 
-.back{
+.back {
     border: 2px solid black;
     background-color: white;
     color: black;
@@ -46,4 +46,10 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.3s ease-in;
+}
+
+.back:hover {
+    background-color: black;
+    color: white;
 }
